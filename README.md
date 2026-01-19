@@ -92,5 +92,4 @@ I have to push it out too far :)
 - `index.ts` - Minimal reproducer worker
 - `wrangler.toml` - Cloudflare Workers config
 
-## References
 [1]: https://community.cloudflare.com/t/date-in-worker-is-reporting-thu-jan-01-1970-0000-gmt-0000/236503
