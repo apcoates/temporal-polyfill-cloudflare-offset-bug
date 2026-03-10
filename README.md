@@ -2,6 +2,10 @@
 
 `maxPossibleTransition` is computed at module load time using `new Date()`. In Cloudflare Workers, [`new Date()` returns epoch 0 (1970-01-01)][1] during module initialization. This causes `maxPossibleTransition` to be set to 1980, and all dates after 1980 get clamped, returning incorrect timezone offsets.
 
+## Updated March 9, 2026: fixed in 0.3.1
+* https://github.com/fullcalendar/temporal-polyfill/releases/tag/v0.3.1
+* https://github.com/fullcalendar/temporal-polyfill/issues/83#issuecomment-4028196169
+
 ## Cause
 
 **File:** `timeZoneConfig.ts:9`
